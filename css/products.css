@@ -1,0 +1,439 @@
+/* Fonts */
+@font-face {
+  font-family: "HurmeGeometricSans1";
+  src: url(../Fonts/HurmeGeometricSans1.otf);
+}
+@font-face {
+  font-family: "HurmeGeometricSans1 Bold";
+  src: url(../Fonts/HurmeGeometricSans1\ Bold.otf);
+}
+@font-face {
+  font-family: "HurmeGeometricSans1 SemiBold";
+  src: url(../Fonts/HurmeGeometricSans1\ SemiBold.otf);
+}
+@font-face {
+  font-family: "HurmeGeometricSans1 Light";
+  src: url(../Fonts/HurmeGeometricSans1\ Light.otf);
+}
+/* Others */
+* {
+  scroll-behavior: smooth;
+}
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+*:focus,
+*::before:focus,
+*::after:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  padding: 1rem;
+}
+body {
+  background-color: #1b1f24;
+}
+
+/* --------------- ALL buttons ----------- */
+.buttons {
+  position: relative;
+  right: 30px;
+  margin-top: 10px;
+  margin-right: 100px;
+  width: 120px;
+  height: 40px;
+  color: #1b1f24;
+  border-radius: 7px;
+  border: none;
+  background-color: #eedd82;
+  font-family: "HurmeGeometricSans1 SemiBold";
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.buttons:hover {
+  transform: scale(0.9);
+  transition: 1s;
+}
+.buttons a {
+  text-decoration: none;
+  color: #1b1f24;
+}
+.buttons > a:hover {
+  color: #1b1f24;
+}
+/* --------------- Nav --------------- */
+.nav__menu {
+  z-index: 2;
+}
+.nav__close {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+.nav__close:hover {
+  color: #eedd82;
+}
+.nav__icon {
+  display: none;
+}
+.nav__collapse {
+  font-size: 2.5rem;
+  color: #eedd82;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.9s;
+}
+.nav__collapse:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b1f24;
+  height: 100px;
+  z-index: 1;
+}
+.nav__item {
+  display: inline-block;
+  padding: 15px 0px 0px 10px;
+}
+.nav__item a {
+  text-decoration: none;
+  text-decoration-line: none;
+  font-family: "HurmeGeometricSans1 SemiBold";
+  letter-spacing: 1px;
+}
+.nav__logo {
+  text-decoration: none;
+  text-decoration-line: none;
+  padding-top: 5px;
+  font-family: "HurmeGeometricSans1 SemiBold";
+  font-size: 35px;
+  color: #fff;
+  width: 183px;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.nav__logo span {
+  color: #eedd82;
+  font-family: "HurmeGeometricSans1 SemiBold";
+  transition: 0.9s;
+}
+.nav__logo:hover {
+  color: #eedd82;
+  transform: scale(0.9);
+  transition: 0.9s;
+}
+.nav__logo > span:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__link {
+  font-size: 20px;
+  color: #fff;
+  transition: 0.9s;
+}
+.nav__link:hover {
+  transition: 0.9s;
+  color: #eedd82;
+}
+.container1 {
+  width: 80%;
+  margin: auto;
+}
+/* section 1 */
+.section__product {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  margin-bottom: 15px;
+}
+.product__line1 {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-between;
+}
+/* Lamps */
+.lamp__design {
+  width: 310px;
+  height: 450px;
+  border-radius: 7px;
+  border: solid 1px #eedd82;
+  background-color: #22272d;
+  margin-top: 30px;
+  transition: 0.9s;
+}
+.lamp__design:hover {
+  transform: scale(1);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.404);
+  transition: 0.9s;
+}
+.lamp__container {
+  width: 309;
+  height: 340px;
+  border-radius: 7px;
+  background-color: transparent;
+  border-bottom: solid 2px #1b1f24;
+  transition: 0.9s;
+}
+.lamp__container img {
+  width: max-content;
+  height: max-content;
+  transition: 0.9s;
+}
+.lamp__container > img:hover {
+  transform: scale(1.1);
+  transition: 0.9s;
+}
+
+.lamp__desc {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-left: 10px;
+}
+.lamp__name {
+  width: 204px;
+  flex-grow: 0;
+  font-family: HurmeGeometricSans1;
+  font-size: 25px;
+  text-align: left;
+  color: #fff;
+}
+.lamp__name span {
+  color: #eedd82;
+}
+.lamp__info {
+  width: 200px;
+  height: 65px;
+  font-family: HurmeGeometricSans1;
+  font-size: 20px;
+  letter-spacing: -0.38px;
+  text-align: left;
+  color: #ccc;
+}
+.lamp__price {
+  width: 84px;
+  flex-grow: 0;
+  font-family: HurmeGeometricSans1;
+  font-size: 25px;
+  text-align: left;
+  color: #fff;
+}
+.lamp__price span {
+  font-size: 15px;
+  color: #eedd82;
+}
+
+/* -------------- footer --------------- */
+.footer__bg {
+  height: 139px;
+  background-color: #181b20;
+  padding: 53px 213px 54px 180px;
+}
+.footer__subtitle {
+  width: 232px;
+  height: 21px;
+  flex-grow: 0;
+  margin: 7px 0;
+  font-family: Montserrat;
+  font-size: 15px;
+  text-align: left;
+  color: #898989;
+}
+.footer__links {
+  display: inline-block;
+  font-family: HurmeGeometricSans1 SemiBold;
+  font-size: 20px;
+  text-align: left;
+}
+.footer__links a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.6s;
+}
+.footer__links a:hover {
+  color: #eedd82;
+  transition: 0.6s;
+}
+.footer__socials {
+  font-size: 1.5rem;
+}
+.footer__socials a {
+  text-decoration: none;
+}
+
+.socials {
+  color: #eedd82;
+  transition: 0.9s;
+  background-color: transparent;
+}
+.socials:hover {
+  color: #fff;
+  transition: 0.9s;
+}
+/* --------------- SCROLL BAR --------------- */
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 0.5rem;
+  transition: 0.9s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+  transition: 0.9s;
+}
+/* Scroll to top */
+.scroll__totop {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  right: 0;
+  bottom: 1.3rem;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: #eedd82;
+  cursor: pointer;
+  transition: 0.9s;
+}
+.scroll__totop:hover {
+  background-color: #ccc;
+  transform: translateY(0.3rem);
+  transition: 0.9s;
+}
+.scroll__totop a {
+  text-decoration: none;
+  color: #1b1f24;
+}
+.scrolltop {
+  color: #1b1f24;
+}
+/* Footer Mobile */
+@media screen and (min-width: 1000px) {
+  .footer__bg {
+    display: flex;
+    justify-content: space-evenly;
+    transition: 0.9s;
+  }
+}
+
+@media screen and (max-width: 995px) {
+  /* footer */
+  .footer__bg {
+    width: 100%;
+    height: 250px;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    transition: 0.9s;
+  }
+  .footer__links {
+    text-decoration-line: none;
+    justify-content: center;
+    margin: auto;
+    transition: 0.9s;
+  }
+  .footer-links {
+    margin: auto;
+    padding: 10px;
+    transition: 0.9s;
+  }
+  .footer__socials {
+    margin: auto;
+    transition: 0.9s;
+  }
+}
+/* Nav  Mobile*/
+@media screen and (min-width: 566px) {
+  .nav__close,
+  .nav__collapse {
+    display: none;
+    transition: 0.9s;
+  }
+}
+@media screen and (max-width: 761px) {
+  .nav__link {
+    font-size: 16px;
+    transition: 0.9s;
+  }
+  .nav__menu {
+    margin-top: 10px;
+    transition: 0.9s;
+  }
+}
+@media screen and (max-width: 565px) {
+  /* nav */
+  .nav__menu {
+    background-color: #1b1f24;
+    position: fixed;
+    width: 110%;
+    height: 200px;
+    top: 80px;
+    z-index: 10;
+    overflow-x: hidden;
+    border-bottom: solid 1px black;
+    transition: ease-in-out 0.9s;
+  }
+  .remove-menu {
+    display: none;
+    transition: ease-in-out 0.9s;
+  }
+
+  .nav__list {
+    display: grid;
+    grid-template-rows: repeat(4, 45px);
+    overflow-x: hidden;
+    transition: 0.9s;
+  }
+  .nav__close {
+    position: absolute;
+    left: 80%;
+    bottom: 80%;
+    transition: ease-in-out 0.9s;
+  }
+  .nav__link {
+    font-size: 20px;
+    transition: 0.9s;
+  }
+  .nav__icon {
+    display: inline-block;
+    padding-right: 5px;
+    transition: 0.9s;
+  }
+  .main__container {
+    position: relative;
+    right: 20px;
+    overflow: hidden;
+    transition: 0.9s;
+  }
+  /* overflow */
+  footer {
+    overflow-x: hidden;
+  }
+}
